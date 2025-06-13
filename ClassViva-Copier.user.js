@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         复制 Classviva 的题目为 HTML 代码
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  复制 Classviva 的题目为 HTML 代码，便于使用 AI 进行题目的分析及解答
 // @author       GamerNoTitle
 // @match        *://*.classviva.org/*
@@ -203,7 +203,7 @@
                         margin-top: 8px;
                         padding: 5px 10px;
                         background-color: #8e8cd8;
-                        color: #333;
+                        color: #fff;
                         border: none;
                         border-radius: 8px;
                         cursor: pointer;
@@ -214,10 +214,10 @@
 
                     // 添加hover和点击效果
                     copyButton.addEventListener('mouseover', () => {
-                        copyButton.style.backgroundColor = '#cce7f5';
+                        copyButton.style.backgroundColor = '#b2a5ff';
                     });
                     copyButton.addEventListener('mouseout', () => {
-                        copyButton.style.backgroundColor = '#def2f8';
+                        copyButton.style.backgroundColor = '#8e8cd8';
                     });
                     copyButton.addEventListener('mousedown', () => {
                         copyButton.style.transform = 'scale(0.98)';
@@ -237,7 +237,7 @@
                         console.log(`[ClassViva-Copier] 用户触发了复制操作，尝试将题目 ${questionDiv.id} 复制到用户剪贴板中……`);
 
                         // 调用导航栏通知函数
-                        showNavbarNotification('本题 HTML 代码已复制！');
+                        showNavbarNotification('题目 ' + questionDiv.id + ' 的 HTML 代码已复制！');
                     });
 
                     infoElement.appendChild(copyButton);
