@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         复制 Classviva 的题目为 HTML 代码
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  复制 Classviva 的题目为 HTML 代码，便于使用 AI 进行题目的分析及解答
 // @author       GamerNoTitle
 // @match        *://*.classviva.org/*
 // @icon         https://www.classviva.org/pluginfile.php?file=%2F1%2Fcore_admin%2Flogocompact%2F100x100%2F1731391655%2Ffavicon.png
 // @grant        GM_setClipboard
+// @license      MIT
 // ==/UserScript==
 
 (function () {
@@ -148,11 +149,11 @@
 
         // 添加下拉菜单项
         aboutMenuDiv.innerHTML = `
-            <a href="https://github.com/GDUTMeow/ClassViva-Copy-Question-As-HTML" class="dropdown-item menu-action" role="menuitem" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/GDUTMeow/ClassViva-Copier" class="dropdown-item menu-action" role="menuitem" target="_blank" rel="noopener noreferrer">
                 ${githubIconSVG}
                 <span class="menu-action-text ml-1">Github 脚本仓库</span>
             </a>
-            <a href="https://greasyfork.org/zh-CN/scripts/xxxxxxxxxxxx" class="dropdown-item menu-action" role="menuitem" target="_blank" rel="noopener noreferrer">
+            <a href="https://greasyfork.org/zh-CN/scripts/539284-%E5%A4%8D%E5%88%B6-classviva-%E7%9A%84%E9%A2%98%E7%9B%AE%E4%B8%BA-html-%E4%BB%A3%E7%A0%81" class="dropdown-item menu-action" role="menuitem" target="_blank" rel="noopener noreferrer">
                 ${greasyforkIconSVG}
                 <span class="menu-action-text ml-1">GreasyFork</span>
             </a>
@@ -172,7 +173,7 @@
         aboutLi.appendChild(aboutMenuDiv);
         navUl.insertBefore(aboutLi, notificationsLi);
 
-        console.log('[ClassViva-Copier] “关于”菜单已添加到导航栏。');
+        console.log('[ClassViva-Copier] 【关于】菜单已添加到导航栏。');
     }
 
 
