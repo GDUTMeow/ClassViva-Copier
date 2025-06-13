@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         复制 Classviva 的题目为 HTML 代码
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  复制 Classviva 的题目为 HTML 代码，便于使用 AI 进行题目的分析及解答
 // @author       GamerNoTitle
 // @match        *://*.classviva.org/*
@@ -287,6 +287,7 @@
         console.log('[ClassViva-Copier] 窗口加载完成，正在添加元素……');
         addCopyButtons();
         addAboutMenu();
+        showNavbarNotification('ClassViva-Copier 脚本已加载！');
     });
 
 })();
