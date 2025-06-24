@@ -2,6 +2,10 @@
 
 添加一个按钮，点击后复制 Classviva 的题目为 HTML 代码，便于使用 AI 进行题目的分析及解答
 
+> [!warning]
+>
+> 必须打开浏览器插件的开发者模式，否则按钮加不上去！！！
+
 - GreasyFork: https://greasyfork.org/zh-CN/scripts/539284-%E5%A4%8D%E5%88%B6-classviva-%E7%9A%84%E9%A2%98%E7%9B%AE%E4%B8%BA-html-%E4%BB%A3%E7%A0%81
 - Github: https://github.com/GDUTMeow/ClassViva-Copier/raw/refs/heads/master/ClassViva-Copier.user.js
 
